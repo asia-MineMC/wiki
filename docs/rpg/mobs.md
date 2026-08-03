@@ -1,4 +1,7 @@
-# 怪物与 BOSS
+---
+title: 怪物与 BOSS
+description: 自定义精英怪与定时 BOSS，组队挑战拿稀有掉落
+---
 
 服务器的怪物体系由 **MythicMobs**（自定义怪物）和 **CustomBoss**（定时 BOSS）驱动，野外不只有原版怪物，还有专属精英怪和定时 BOSS 等你挑战。
 

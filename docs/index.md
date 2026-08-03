@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: 养老生存
-  text: 玩家指南与插件教程
-  tagline: 养老生存服务器 · 生存 · RPG · 公会 · 领地
+  name: MINEMC
+  text: 养老生存
+  tagline: 生存 · RPG · 公会 · 领地 —— 安心养老，慢慢变强
   actions:
     - theme: brand
       text: 新手指南
@@ -17,27 +17,26 @@ hero:
       link: /rpg/skills
 
 features:
+  - icon: ⚒️
+    title: 生存与建设
+    details: 圈领地、开商店、挂市场，安心经营自己的小世界。
+    link: /survival/residence
   - icon: ⚔️
-    title: 生存与 RPG
-    details: 技能、自定义附魔、专属怪物与定时 BOSS、抽奖箱、挂机经验池，玩出自己的流派。
-  - icon: 🏰
-    title: 领地与商店
-    details: 用 Residence 圈出你的地盘，开箱子商店、上架全球市场，交易随心。
-  - icon: 🎭
-    title: 社交与装扮
-    details: 公会、好友、组队、称号、宠物、皮肤，和小伙伴一起冒险。
+    title: RPG 成长
+    details: 技能、附魔、精英怪与定时 BOSS，走自己的变强路线。
+    link: /rpg/skills
+  - icon: 🤝
+    title: 社交协作
+    details: 公会、好友、组队，和伙伴一起冒险不孤单。
+    link: /social/guild
+  - icon: 🎁
+    title: 福利机制
+    details: 签到、每日任务、在线奖励、挂机池，上线即有收获。
+    link: /rpg/rewards
 ---
 
-## 欢迎来到 MINEMC！
-
-本站是服务器的**玩家向玩法指南**，把服务器里所有插件都做成了通俗易懂的教程。
-
-### 快速开始三步走
-
-1. **注册登录**：本服为离线服务器，首次进入用 `/register 密码 重复密码` 注册，之后用 `/login 密码` 登录（详见[新手指南](/guide/quickstart)）。
-2. **熟悉环境**：在主城按 **Shift + 右键**（或潜行右键）打开服务器主菜单，几乎所有功能入口都在里面。
-3. **安家立业**：先去资源世界挖矿发展，再圈一块[领地](/survival/residence)盖房子，开个[箱子商店](/survival/quickshop)做生意。
-
-::: tip 提示
-本指南所有指令以游戏内实际生效为准，如与服务器设置有出入，以游戏内为准。
-:::
+<div class="minemc-cta">
+  <h2>准备好开始养老了吗？</h2>
+  <p>首次进入请先注册登录：/register 密码 密码 · 之后 /login 密码</p>
+  <a href="/guide/quickstart">查看新手指南</a>
+</div>

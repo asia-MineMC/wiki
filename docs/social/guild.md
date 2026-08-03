@@ -1,4 +1,7 @@
-# 公会系统（LegendaryGuild）
+---
+title: 公会系统
+description: 创建或加入公会，进贡升级、公会基地，一起发展壮大
+---
 
 加入公会，和志同道合的玩家一起发展：**公会领地、公会商店、公会技能、公会活动**，一个人玩不了一整片江山。
 
@@ -6,11 +9,11 @@
 
 | 功能 | 指令 |
 |---|---|
-| 打开公会界面 | `/guild` 或 `/g` |
-| 创建公会 | `/guild create 公会名`（需要金币） |
-| 加入公会 | `/guild join 公会名` |
-| 查看公会列表 | `/guild list` |
-| 查看公会信息 | `/guild info` |
+| 打开公会界面 | `/guilds` |
+| 创建公会 | `/guilds create 公会名`（需要金币） |
+| 加入公会 | `/guilds join 公会名` |
+| 查看公会列表 | `/guilds list` |
+| 查看公会信息 | `/guilds info` |
 
 ## 公会核心功能
 
@@ -23,7 +26,7 @@
 ### 公会领地/基地
 
 - 公会拥有**独立的公会领地**（或公会家园）。
-- `/guild home` 传送到公会基地，`/guild sethome` 设置基地位置（需权限）。
+- `/guilds home` 传送到公会基地，`/guilds sethome` 设置基地位置（需权限）。
 
 ### 公会升级
 
@@ -34,14 +37,14 @@
 
 | 功能 | 指令 |
 |---|---|
-| 公会聊天 | `/guild chat 内容` 或切换频道 |
-| 传送至公会基地 | `/guild home` |
-| 设置公会基地 | `/guild sethome` |
-| 查看成员 | `/guild members` 或界面 |
-| 踢出成员 | `/guild kick 玩家名`（管理员） |
-| 任命职位 | `/guild promote 玩家名`（管理员） |
-| 解散公会 | `/guild disband`（会长） |
-| 退出公会 | `/guild leave` |
+| 公会聊天 | `/guilds chat 内容` 或切换频道 |
+| 传送至公会基地 | `/guilds home` |
+| 设置公会基地 | `/guilds sethome` |
+| 查看成员 | `/guilds members` 或界面 |
+| 踢出成员 | `/guilds kick 玩家名`（管理员） |
+| 任命职位 | `/guilds promote 玩家名`（管理员） |
+| 解散公会 | `/guilds disband`（会长） |
+| 退出公会 | `/guilds leave` |
 
 ## 公会职务
 

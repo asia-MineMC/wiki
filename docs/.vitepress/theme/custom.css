@@ -1,0 +1,247 @@
+/* ============================================
+   MINEMC 玩家指南 —— 蓝色主题 · 简洁高级排版
+   ============================================ */
+
+:root {
+  /* 品牌蓝 */
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.10);
+
+  /* 字体 */
+  --vp-font-family-base: 'Inter', 'PingFang SC', 'HarmonyOS Sans SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  /* 背景与文字微调 */
+  --vp-c-bg-alt: #f7f9fc;
+  --vp-c-divider: #e6eaf2;
+  --vp-c-text-1: #101828;
+  --vp-c-text-2: #475467;
+  --vp-c-text-3: #98a2b3;
+}
+
+/* ---------- 导航 ---------- */
+.VPNavBar {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.VPNavBar .title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- 正文标题 ---------- */
+.vp-doc h1 {
+  font-size: 1.9rem;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+.vp-doc h2 {
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  margin-top: 40px;
+  padding-top: 4px;
+}
+.vp-doc h3 {
+  font-size: 1.1rem;
+}
+.vp-doc h2,
+.vp-doc h3 {
+  font-weight: 650;
+}
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.85;
+}
+
+/* 页面顶部标题栏（frontmatter title + description） */
+.doc-header {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.doc-title {
+  font-size: 1.9rem;
+  letter-spacing: -0.015em;
+}
+.doc-description {
+  font-size: 1.05rem;
+  color: var(--vp-c-text-2);
+}
+
+/* ---------- 表格 ---------- */
+.vp-doc table {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  font-size: 0.925rem;
+}
+.vp-doc tr:nth-child(2n) {
+  background: #f8fafc;
+}
+.vp-doc th {
+  background: #eef2ff;
+  color: #1d4ed8;
+  font-weight: 600;
+  border: none;
+  padding: 10px 16px;
+}
+.vp-doc td {
+  border: none;
+  border-top: 1px solid var(--vp-c-divider);
+  padding: 10px 16px;
+}
+
+/* ---------- 代码与指令 ---------- */
+.vp-doc code {
+  font-size: 0.85em;
+  background: #eef2ff;
+  color: #1d40af;
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.vp-doc .code-block,
+.vp-doc div[class*='language-'] {
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+}
+.vp-doc div[class*='language-'] code {
+  background: transparent;
+  color: inherit;
+}
+
+/* ---------- 提示框 ---------- */
+.vp-doc .custom-block {
+  border-radius: 10px;
+  font-size: 0.925rem;
+}
+.vp-doc .custom-block.tip {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+.vp-doc .custom-block.warning {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+.vp-doc .custom-block.danger {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+/* ---------- 链接 ---------- */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+.vp-doc a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 首页 hero ---------- */
+.VPHero .name {
+  background: linear-gradient(120deg, #1d4ed8 0%, #3b82f6 55%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.VPHero .text {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+.VPHero .tagline {
+  color: var(--vp-c-text-2);
+  letter-spacing: 0.01em;
+}
+
+/* 首页按钮 */
+.VPHero .actions .VPButton.brand {
+  background: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  transition: all 0.2s ease;
+}
+.VPHero .actions .VPButton.brand:hover {
+  background: var(--vp-c-brand-3);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.32);
+}
+.VPHero .actions .VPButton.alt {
+  border-color: var(--vp-c-divider);
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.VPHero .actions .VPButton.alt:hover {
+  border-color: var(--vp-c-brand-2);
+  color: var(--vp-c-brand-1);
+}
+
+/* ---------- 首页特性卡片 ---------- */
+.VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  background: #ffffff;
+}
+.VPFeature:hover {
+  transform: translateY(-3px);
+  border-color: #bfdbfe;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
+}
+.VPFeature .icon {
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* ---------- 首页 CTA 区 ---------- */
+.minemc-cta {
+  margin: 48px auto 8px;
+  max-width: 1152px;
+  padding: 36px 40px;
+  border-radius: 16px;
+  background: linear-gradient(120deg, #1e40af 0%, #2563eb 60%, #3b82f6 100%);
+  color: #fff;
+  text-align: center;
+}
+.minemc-cta h2 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.minemc-cta p {
+  margin: 0 0 20px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.98rem;
+}
+.minemc-cta a {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 999px;
+  background: #fff;
+  color: #1d4ed8 !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+.minemc-cta a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- 侧边栏 ---------- */
+.VPSidebarItem.level-0 > .item > .text {
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+.VPSidebarItem .text {
+  font-size: 0.9rem;
+}
+
+/* ---------- 页脚 ---------- */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+}

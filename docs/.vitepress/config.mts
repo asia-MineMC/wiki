@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // 部署在 <username>.github.io/<repo>/ 路径下，base 必须与仓库名一致
   base: '/vitepress-site/',
-  title: "养老生存 玩家指南",
-  description: "养老生存服务器 —— 玩家向插件玩法教程与指令大全",
+  title: "MINEMC 玩家指南",
+  description: "MINEMC 服务器 · 养老生存玩法 —— 玩家向插件玩法教程与指令大全",
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -62,7 +62,6 @@ export default defineConfig({
       {
         text: '装扮与宠物',
         items: [
-          { text: '玩家称号', link: '/cosmetic/title' },
           { text: '宠物系统', link: '/cosmetic/pets' },
           { text: '皮肤系统', link: '/cosmetic/skins' },
           { text: '背包与物品银行', link: '/cosmetic/backpack' },

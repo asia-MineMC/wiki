@@ -1,4 +1,7 @@
-# 附魔系统（ExcellentEnchants + 拆魔）
+---
+title: 附魔系统
+description: 自定义高级附魔与附魔拆除，装备上限大幅提升
+---
 
 服务器的附魔系统基于 **ExcellentEnchants**：除了原版附魔，还有大量**自定义高级附魔**，让你的装备上限大幅提升。
 
