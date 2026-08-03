@@ -70,6 +70,8 @@
 
 /* ---------- 表格 ---------- */
 .vp-doc table {
+  width: 100%;
+  table-layout: auto;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--vp-c-divider);
@@ -84,11 +86,22 @@
   font-weight: 600;
   border: none;
   padding: 10px 16px;
+  text-align: left;
 }
 .vp-doc td {
   border: none;
   border-top: 1px solid var(--vp-c-divider);
   padding: 10px 16px;
+  vertical-align: top;
+}
+.vp-doc td:first-child,
+.vp-doc th:first-child {
+  width: 32%;
+  white-space: nowrap;
+}
+.vp-doc td:last-child,
+.vp-doc th:last-child {
+  width: 68%;
 }
 
 /* ---------- 代码与指令 ---------- */

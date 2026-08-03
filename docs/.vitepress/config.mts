@@ -23,7 +23,7 @@ export default defineConfig({
         text: '新手入门',
         items: [
           { text: '新手指南', link: '/guide/quickstart' },
-          { text: '金币与点券', link: '/economy/money' }
+          { text: '金币与宝石', link: '/economy/money' }
         ]
       },
       {
