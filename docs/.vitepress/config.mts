@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // 部署在 <username>.github.io/<repo>/ 路径下，base 必须与仓库名一致
-  base: '/vitepress-site/',
+  base: '/minemc-site/',
   title: "MINEMC 玩家指南",
   description: "MINEMC 服务器 · 养老生存玩法 —— 玩家向插件玩法教程与指令大全",
   cleanUrls: true,
