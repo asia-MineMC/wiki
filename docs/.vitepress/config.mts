@@ -15,7 +15,7 @@ export default defineConfig({
       { text: '生存指南', link: '/survival/residence' },
       { text: 'RPG 成长', link: '/rpg/skills' },
       { text: '社交系统', link: '/social/guild' },
-      { text: '装扮与宠物', link: '/cosmetic/title' },
+      { text: '装扮与宠物', link: '/cosmetic/pets' },
       { text: '其他玩法', link: '/extras/seasons' }
     ],
     sidebar: [
