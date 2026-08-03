@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: MINEMC 服务器
+  name: 养老生存
   text: 玩家指南与插件教程
-  tagline: 来自雨云的神奇服务器 · 生存 · RPG · 公会 · 领地
+  tagline: 养老生存服务器 · 生存 · RPG · 公会 · 领地
   actions:
     - theme: brand
       text: 新手指南

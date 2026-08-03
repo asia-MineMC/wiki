@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // 部署在 <username>.github.io/<repo>/ 路径下，base 必须与仓库名一致
   base: '/vitepress-site/',
-  title: "MINEMC 服务器玩家指南",
-  description: "来自雨云的神奇服务器 —— 玩家向插件玩法教程与指令大全",
+  title: "养老生存 玩家指南",
+  description: "养老生存服务器 —— 玩家向插件玩法教程与指令大全",
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
