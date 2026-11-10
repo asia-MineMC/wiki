@@ -205,6 +205,17 @@
 .hm-mine {
   font-style: italic;
 }
+/* 副标语单行不换行（默认 max-width:576px + pre-wrap 会折行） */
+.VPHero .tagline {
+  max-width: none !important;
+  white-space: nowrap !important;
+}
+@media (max-width: 640px) {
+  .VPHero .tagline {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+}
 .VPHero .text {
   font-weight: 700;
   letter-spacing: -0.01em;

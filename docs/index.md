@@ -5,7 +5,7 @@ hero:
   # hero.name 走 v-html，可直接写 span：MINE 斜体、MC 正体
   name: '<span class="hm-mine">MINE</span><span class="hm-mc">MC</span>'
   text: 养老生存 · 维基百科
-  tagline: 慢慢玩，一直都在。｜附魔、市场、决斗、世界 BOSS，一本看完。
+  tagline: 附魔、市场、决斗、世界 BOSS，一本看完。
   actions:
     - theme: brand
       text: 新手入门
