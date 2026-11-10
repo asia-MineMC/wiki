@@ -6,7 +6,9 @@ export default defineConfig({
   base: '/wiki/',
   title: 'WIKI • MINEMC',
   description: 'MINEMC 服务器 · 养老生存百科 —— 玩家向玩法教程与指令大全',
-  cleanUrls: true,
+  // 部署到虚拟主机（Apache）时，无扩展名会被 NamelessMC 的 .htaccess 兜底到 index.php，
+  // 因此关闭 cleanUrls，改用 .html 链接，静态文件可直接命中。
+  cleanUrls: false,
   head: [
     // 草方块图标与论坛门户保持一致（对应「主页 · MINEMC」标签页的草方块）
     ['link', { rel: 'icon', type: 'image/png', href: '/wiki/favicon.png' }]

@@ -240,9 +240,12 @@
 }
 
 /* ---------- 首页特性卡片（对齐门户 .hm-feature） ---------- */
-/* hero 与卡片之间留出间隔 */
-.VPFeatures {
-  padding-top: 56px;
+/* hero ↔ 卡片、卡片 ↔ 下方区块之间留出间隔。
+   VitePress 默认是 .VPFeatures[data-v-xxx]{padding:0 64px}，属性选择器优先级更高，
+   这里用两个类名 + !important 覆盖上/下内边距。 */
+.VPFeatures.VPHomeFeatures {
+  padding-top: 72px !important;
+  padding-bottom: 48px !important;
 }
 .VPFeature {
   border: 1px solid var(--vp-c-divider);
@@ -272,7 +275,7 @@
 /* ---------- 首页「加入方式」卡片（自定义 HTML 区块） ---------- */
 .minemc-join {
   max-width: 1152px;
-  margin: 8px auto 0;
+  margin: 0 auto;
   padding: 0 24px;
 }
 .minemc-join__card {
@@ -332,7 +335,7 @@
 /* ---------- 首页 CTA（对齐门户 .hm-cta 浅色卡） ---------- */
 .minemc-cta {
   max-width: 1152px;
-  margin: 28px auto 8px;
+  margin: 40px auto 8px;
   padding: 26px 30px;
   border-radius: 8px;
   background: linear-gradient(110deg, #eef5fc 0%, #f7fafd 60%, #f3f6fa 100%);
