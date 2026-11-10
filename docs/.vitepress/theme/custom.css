@@ -186,17 +186,22 @@
 }
 .VPHero .name {
   font-size: clamp(3rem, 9vw, 6.4rem);
+  /* 默认 line-height/ max-width 是固定 px，放大字会溢出压到副标题，这里改成比例并放开宽度 */
+  line-height: 1.06 !important;
+  max-width: 100% !important;
   font-weight: 800;
   letter-spacing: 0.03em;
   text-shadow: 0 3px 22px rgba(0, 0, 0, .45);
 }
-/* VitePress 默认把渐变做在 .clip 上，这里压成纯白 */
-.VPHero .name .clip {
-  background: none !important;
-  -webkit-text-fill-color: #fff !important;
+/* VitePress 的标题元素本身就是 <span class="name clip">，蓝色来自
+   --vp-home-hero-name-color / -webkit-text-fill-color；这里压成纯白。 */
+.VPHero .name,
+.VPHero .name.clip {
   color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background: none !important;
 }
-/* MINE 斜体、MC 正体（由 theme/index.ts 拆分 span 生成） */
+/* MINE 斜体、MC 正体（span 直接写在 hero.name 里，构建期渲染，无需 JS） */
 .hm-mine {
   font-style: italic;
 }

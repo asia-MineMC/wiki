@@ -14,6 +14,8 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/wiki/favicon.png' }]
   ],
   themeConfig: {
+    // 导航栏左上角品牌文字只显示 MINEMC（浏览器标签仍用 title: WIKI • MINEMC）
+    siteTitle: 'MINEMC',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
@@ -39,7 +41,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: 'MINEMC 玩家百科 · 如有出入请以游戏内实际为准',
+      message: 'MINEMC 维基百科',
       copyright: 'Copyright © 2026'
     },
     search: {
