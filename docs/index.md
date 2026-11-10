@@ -7,11 +7,11 @@ hero:
   tagline: 慢慢玩，一直都在。｜附魔、市场、决斗、世界 BOSS，一本看完。
   actions:
     - theme: brand
-      text: 新手指南
-      link: /guide/quickstart
+      text: 新手入门
+      link: /guide/start
     - theme: alt
       text: 附魔大全
-      link: /rpg/enchanting
+      link: /guide/enchant
     - theme: alt
       text: 返回主页
       link: https://www.minemc.asia/
@@ -20,19 +20,19 @@ features:
   - icon: ⚒️
     title: 79 种自定义附魔
     details: ExcellentEnchants 拓展包，附魔台、宝箱、钓鱼、村民交易与铁砧都能出货；21 种宝物附魔只能靠探索。
-    link: /rpg/enchanting
+    link: /guide/enchant
   - icon: ⚔️
     title: 单挑决斗与段位
     details: /dt 打开决斗大厅，下界合金 / 铁套 / 钻石 / 弓箭四种场地任选，胜负 ±10 分，一路升到屠龙者。
-    link: https://www.minemc.asia/forum/topic/10/
+    link: /guide/duel
   - icon: 🛒
     title: 全球市场与求购
     details: /market 上架出售、/wbuy 发布求购，无交易税，邮箱自动收货，默认同时挂 10 件商品。
-    link: /survival/auctions
+    link: /guide/market
   - icon: 🐉
     title: 世界 BOSS · 每日两场
     details: 3500 血的循声守卫，每天 12:00 与 20:00 刷新；掉落宝石可在宝石商城换补签卡与飞行卡。
-    link: /rpg/mobs
+    link: /guide/boss
 ---
 
 <div class="minemc-join">

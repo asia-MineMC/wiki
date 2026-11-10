@@ -24,6 +24,14 @@
 }
 
 /* ---------- 导航 ---------- */
+/* 导航栏必须实底，避免壁纸透上来嵌进导引栏 */
+.VPNavBar,
+.VPNavBar.home,
+.VPNavBar .content {
+  background-color: #ffffff !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
 .VPNavBar {
   border-bottom: 1px solid var(--vp-c-divider);
 }
@@ -71,8 +79,10 @@
 
 /* ---------- 表格 ---------- */
 .vp-doc table {
-  width: 100%;
+  width: 100% !important;
+  display: table;
   table-layout: auto;
+  border-collapse: collapse;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--vp-c-divider);
@@ -95,14 +105,15 @@
   padding: 10px 16px;
   vertical-align: top;
 }
-.vp-doc td:first-child,
-.vp-doc th:first-child {
-  width: 32%;
-  white-space: nowrap;
+/* 不再强制列宽/nowrap，长命令自动换行，避免右列被裁切显示不全 */
+.vp-doc th,
+.vp-doc td {
+  word-break: break-word;
 }
-.vp-doc td:last-child,
-.vp-doc th:last-child {
-  width: 68%;
+.vp-doc td code,
+.vp-doc th code {
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* ---------- 代码与指令 ---------- */
@@ -155,13 +166,13 @@
    首页：仿门户 masthead（全幅 Minecraft 壁纸 + 白色标题）
    ============================================ */
 .VPHero {
-  min-height: 58vh;
+  min-height: calc(100vh - var(--vp-nav-height, 64px));
   display: flex;
   align-items: center;
   background-color: #10201a;
   background-image:
     linear-gradient(180deg, rgba(10, 22, 16, .52) 0%, rgba(10, 22, 16, .26) 52%,
-      rgba(243, 246, 250, .94) 100%),
+      rgba(10, 22, 16, 0) 100%),
     url('/wiki/mc-bg.webp');
   background-size: cover;
   background-position: center;
@@ -174,11 +185,20 @@
   color: #fff !important;
 }
 .VPHero .name {
-  -webkit-text-fill-color: #fff !important;
-  background: none !important;
+  font-size: clamp(3rem, 9vw, 6.4rem);
   font-weight: 800;
   letter-spacing: 0.03em;
   text-shadow: 0 3px 22px rgba(0, 0, 0, .45);
+}
+/* VitePress 默认把渐变做在 .clip 上，这里压成纯白 */
+.VPHero .name .clip {
+  background: none !important;
+  -webkit-text-fill-color: #fff !important;
+  color: #fff !important;
+}
+/* MINE 斜体、MC 正体（由 theme/index.ts 拆分 span 生成） */
+.hm-mine {
+  font-style: italic;
 }
 .VPHero .text {
   font-weight: 700;
@@ -220,6 +240,10 @@
 }
 
 /* ---------- 首页特性卡片（对齐门户 .hm-feature） ---------- */
+/* hero 与卡片之间留出间隔 */
+.VPFeatures {
+  padding-top: 56px;
+}
 .VPFeature {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;

@@ -15,71 +15,24 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '新手入门', link: '/guide/quickstart' },
-      { text: '生存指南', link: '/survival/residence' },
-      { text: 'RPG 成长', link: '/rpg/skills' },
-      { text: '社交系统', link: '/social/guild' },
-      { text: '装扮与宠物', link: '/cosmetic/pets' },
-      { text: '其他玩法', link: '/extras/seasons' },
+      { text: '新手入门', link: '/guide/start' },
+      { text: '附魔', link: '/guide/enchant' },
+      { text: '市场', link: '/guide/market' },
+      { text: '决斗', link: '/guide/duel' },
+      { text: 'BOSS', link: '/guide/boss' },
+      { text: '更新日志', link: '/guide/changelog' },
       { text: '返回主页', link: 'https://www.minemc.asia/' }
     ],
     sidebar: [
       {
-        text: '新手入门',
+        text: '玩法百科',
         items: [
-          { text: '新手指南', link: '/guide/quickstart' },
-          { text: '金币与宝石', link: '/economy/money' }
-        ]
-      },
-      {
-        text: '生存指南',
-        items: [
-          { text: '领地系统', link: '/survival/residence' },
-          { text: '箱子商店', link: '/survival/quickshop' },
-          { text: '全球市场', link: '/survival/auctions' },
-          { text: '每日回收', link: '/survival/recycle' },
-          { text: '随机传送', link: '/survival/rtp' },
-          { text: '玩家地标', link: '/survival/warp' },
-          { text: '世界介绍', link: '/survival/worlds' }
-        ]
-      },
-      {
-        text: 'RPG 成长',
-        items: [
-          { text: '技能系统', link: '/rpg/skills' },
-          { text: '附魔系统', link: '/rpg/enchanting' },
-          { text: '怪物与 BOSS', link: '/rpg/mobs' },
-          { text: '抽奖箱', link: '/rpg/crates' },
-          { text: '挂机经验池', link: '/rpg/exppond' },
-          { text: '每日任务', link: '/rpg/quests' },
-          { text: '签到与在线奖励', link: '/rpg/rewards' }
-        ]
-      },
-      {
-        text: '社交系统',
-        items: [
-          { text: '公会系统', link: '/social/guild' },
-          { text: '好友系统', link: '/social/friends' },
-          { text: '组队系统', link: '/social/team' },
-          { text: '聊天与 @ 提醒', link: '/social/chat' }
-        ]
-      },
-      {
-        text: '装扮与宠物',
-        items: [
-          { text: '宠物系统', link: '/cosmetic/pets' },
-          { text: '皮肤系统', link: '/cosmetic/skins' },
-          { text: '背包与物品银行', link: '/cosmetic/backpack' },
-          { text: '自定义物品', link: '/cosmetic/items' },
-          { text: '飞行系统', link: '/cosmetic/flight' }
-        ]
-      },
-      {
-        text: '其他玩法',
-        items: [
-          { text: '季节系统', link: '/extras/seasons' },
-          { text: '红包玩法', link: '/extras/redpacket' },
-          { text: '便利功能', link: '/extras/misc' }
+          { text: '新手入门', link: '/guide/start' },
+          { text: '自定义附魔', link: '/guide/enchant' },
+          { text: '全球市场与求购', link: '/guide/market' },
+          { text: '单挑决斗', link: '/guide/duel' },
+          { text: '世界 BOSS 与宝石商城', link: '/guide/boss' },
+          { text: '更新日志', link: '/guide/changelog' }
         ]
       }
     ],
