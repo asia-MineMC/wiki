@@ -7,6 +7,10 @@ export default defineConfig({
   title: 'WIKI · MINEMC',
   description: 'MINEMC 服务器 · 养老生存百科 —— 玩家向玩法教程与指令大全',
   cleanUrls: true,
+  head: [
+    // 草方块图标与论坛门户保持一致（对应「主页 · MINEMC」标签页的草方块）
+    ['link', { rel: 'icon', type: 'image/png', href: '/wiki/favicon.png' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
