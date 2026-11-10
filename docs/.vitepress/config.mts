@@ -14,8 +14,9 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/wiki/favicon.png' }]
   ],
   themeConfig: {
-    // 导航栏左上角品牌文字只显示 MINEMC（浏览器标签仍用 title: WIKI • MINEMC）
-    siteTitle: 'MINEMC',
+    // 导航栏左上角用斜体字标（透明底、品牌蓝），不再显示文字
+    logo: '/wordmark.png',
+    siteTitle: '',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },

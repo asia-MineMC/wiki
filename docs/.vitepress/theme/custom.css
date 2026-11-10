@@ -39,6 +39,12 @@
   font-weight: 800;
   letter-spacing: 0.02em;
 }
+/* 导航左上角斜体字标：控制高度，宽度按比例 */
+:root { --vp-nav-logo-height: 26px; }
+.VPNavBarTitle .logo {
+  height: var(--vp-nav-logo-height);
+  width: auto;
+}
 
 /* ---------- 正文标题 ---------- */
 .vp-doc h1 {
