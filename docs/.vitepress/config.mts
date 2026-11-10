@@ -3,9 +3,9 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // 部署在 <username>.github.io/<repo>/ 路径下，base 必须与仓库名一致
-  base: '/minemc-site/',
-  title: "MINEMC 玩家指南",
-  description: "MINEMC 服务器 · 养老生存玩法 —— 玩家向插件玩法教程与指令大全",
+  base: '/wiki/',
+  title: 'WIKI · MINEMC',
+  description: 'MINEMC 服务器 · 养老生存百科 —— 玩家向玩法教程与指令大全',
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -16,7 +16,8 @@ export default defineConfig({
       { text: 'RPG 成长', link: '/rpg/skills' },
       { text: '社交系统', link: '/social/guild' },
       { text: '装扮与宠物', link: '/cosmetic/pets' },
-      { text: '其他玩法', link: '/extras/seasons' }
+      { text: '其他玩法', link: '/extras/seasons' },
+      { text: '返回主页', link: 'https://www.minemc.asia/' }
     ],
     sidebar: [
       {
@@ -79,7 +80,7 @@ export default defineConfig({
       }
     ],
     footer: {
-      message: 'MINEMC 玩家指南 · 如有出入请以游戏内实际为准',
+      message: 'MINEMC 玩家百科 · 如有出入请以游戏内实际为准',
       copyright: 'Copyright © 2026'
     },
     search: {

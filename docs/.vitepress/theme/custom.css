@@ -1,24 +1,26 @@
 /* ============================================
-   MINEMC 玩家指南 —— 蓝色主题 · 简洁高级排版
+   MINEMC WIKI —— 对齐论坛门户（www.minemc.asia）的配色与排版
+   门户语言：浅灰蓝底 #f3f6fa · 白卡片 · 细边框 #e3e8ef · 蓝 #2185d0
    ============================================ */
 
 :root {
-  /* 品牌蓝 */
-  --vp-c-brand-1: #2563eb;
-  --vp-c-brand-2: #3b82f6;
-  --vp-c-brand-3: #1d4ed8;
-  --vp-c-brand-soft: rgba(37, 99, 235, 0.10);
+  /* 品牌蓝（取自论坛门户 .hm-* 组件） */
+  --vp-c-brand-1: #2185d0;
+  --vp-c-brand-2: #1678c2;
+  --vp-c-brand-3: #1678c2;
+  --vp-c-brand-soft: rgba(33, 133, 208, 0.10);
 
   /* 字体 */
-  --vp-font-family-base: 'Inter', 'PingFang SC', 'HarmonyOS Sans SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  --vp-font-family-base: 'Lato', 'Inter', 'PingFang SC', 'HarmonyOS Sans SC',
+    'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
   --vp-font-family-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
 
-  /* 背景与文字微调 */
-  --vp-c-bg-alt: #f7f9fc;
-  --vp-c-divider: #e6eaf2;
-  --vp-c-text-1: #101828;
-  --vp-c-text-2: #475467;
-  --vp-c-text-3: #98a2b3;
+  /* 背景与文字 */
+  --vp-c-bg-alt: #f3f6fa;
+  --vp-c-divider: #e3e8ef;
+  --vp-c-text-1: #1f2430;
+  --vp-c-text-2: #3b4250;
+  --vp-c-text-3: #6b7280;
 }
 
 /* ---------- 导航 ---------- */
@@ -26,7 +28,7 @@
   border-bottom: 1px solid var(--vp-c-divider);
 }
 .VPNavBar .title {
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.02em;
 }
 
@@ -35,7 +37,7 @@
   font-size: 1.9rem;
   line-height: 1.3;
   letter-spacing: -0.015em;
-  font-weight: 700;
+  font-weight: 800;
 }
 .vp-doc h2 {
   font-size: 1.35rem;
@@ -48,14 +50,13 @@
 }
 .vp-doc h2,
 .vp-doc h3 {
-  font-weight: 650;
+  font-weight: 700;
 }
 .vp-doc p,
 .vp-doc li {
   line-height: 1.85;
 }
 
-/* 页面顶部标题栏（frontmatter title + description） */
 .doc-header {
   border-bottom: 1px solid var(--vp-c-divider);
 }
@@ -65,25 +66,25 @@
 }
 .doc-description {
   font-size: 1.05rem;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-3);
 }
 
 /* ---------- 表格 ---------- */
 .vp-doc table {
   width: 100%;
   table-layout: auto;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--vp-c-divider);
   font-size: 0.925rem;
 }
 .vp-doc tr:nth-child(2n) {
-  background: #f8fafc;
+  background: #f7f9fc;
 }
 .vp-doc th {
-  background: #eef2ff;
-  color: #1d4ed8;
-  font-weight: 600;
+  background: #eaf4fc;
+  color: #1678c2;
+  font-weight: 700;
   border: none;
   padding: 10px 16px;
   text-align: left;
@@ -107,14 +108,14 @@
 /* ---------- 代码与指令 ---------- */
 .vp-doc code {
   font-size: 0.85em;
-  background: #eef2ff;
-  color: #1d40af;
+  background: #eaf4fc;
+  color: #1678c2;
   border-radius: 5px;
   padding: 2px 6px;
 }
 .vp-doc .code-block,
 .vp-doc div[class*='language-'] {
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid var(--vp-c-divider);
 }
 .vp-doc div[class*='language-'] code {
@@ -124,12 +125,12 @@
 
 /* ---------- 提示框 ---------- */
 .vp-doc .custom-block {
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 0.925rem;
 }
 .vp-doc .custom-block.tip {
-  background: #eff6ff;
-  border-color: #bfdbfe;
+  background: #eaf4fc;
+  border-color: #d6e8f7;
 }
 .vp-doc .custom-block.warning {
   background: #fffbeb;
@@ -146,108 +147,218 @@
   text-decoration: none;
 }
 .vp-doc a:hover {
+  color: var(--vp-c-brand-2);
   text-decoration: underline;
 }
 
-/* ---------- 首页 hero ---------- */
+/* ============================================
+   首页：仿门户 masthead（全幅 Minecraft 壁纸 + 白色标题）
+   ============================================ */
+.VPHero {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  background-color: #10201a;
+  background-image:
+    linear-gradient(180deg, rgba(10, 22, 16, .52) 0%, rgba(10, 22, 16, .26) 52%,
+      rgba(243, 246, 250, .94) 100%),
+    url('/wiki/mc-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline,
+.VPHero .main {
+  color: #fff !important;
+}
 .VPHero .name {
-  background: linear-gradient(120deg, #1d4ed8 0%, #3b82f6 55%, #60a5fa 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #fff !important;
+  background: none !important;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  text-shadow: 0 3px 22px rgba(0, 0, 0, .45);
 }
 .VPHero .text {
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: -0.01em;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, .42);
 }
 .VPHero .tagline {
-  color: var(--vp-c-text-2);
+  color: rgba(255, 255, 255, .92) !important;
   letter-spacing: 0.01em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .4);
 }
 
 /* 首页按钮 */
 .VPHero .actions .VPButton.brand {
   background: var(--vp-c-brand-1);
   border-color: var(--vp-c-brand-1);
-  font-weight: 600;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
-  transition: all 0.2s ease;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(33, 133, 208, .35);
+  transition: all .2s ease;
 }
 .VPHero .actions .VPButton.brand:hover {
-  background: var(--vp-c-brand-3);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.32);
+  background: var(--vp-c-brand-2);
+  border-color: var(--vp-c-brand-2);
+  transform: translateY(-2px);
 }
 .VPHero .actions .VPButton.alt {
-  border-color: var(--vp-c-divider);
-  color: var(--vp-c-text-1);
-  font-weight: 600;
-  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, .14);
+  border-color: rgba(255, 255, 255, .48);
+  color: #fff;
+  font-weight: 700;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  transition: all .2s ease;
 }
 .VPHero .actions .VPButton.alt:hover {
-  border-color: var(--vp-c-brand-2);
-  color: var(--vp-c-brand-1);
+  background: rgba(255, 255, 255, .26);
+  border-color: #fff;
+  color: #fff;
 }
 
-/* ---------- 首页特性卡片 ---------- */
+/* ---------- 首页特性卡片（对齐门户 .hm-feature） ---------- */
 .VPFeature {
   border: 1px solid var(--vp-c-divider);
-  border-radius: 14px;
-  transition: all 0.25s ease;
-  background: #ffffff;
+  border-radius: 8px;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(27, 31, 38, .06);
 }
 .VPFeature:hover {
-  transform: translateY(-3px);
-  border-color: #bfdbfe;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
+  transform: translateY(-4px);
+  border-color: #c9dcee;
+  box-shadow: 0 10px 28px rgba(27, 31, 38, .09);
 }
 .VPFeature .icon {
-  border-radius: 10px;
-  background: #eff6ff;
-  color: #2563eb;
+  border-radius: 8px;
+  background: #eaf4fc;
+  color: var(--vp-c-brand-1);
+}
+.VPFeature .title {
+  color: var(--vp-c-text-1);
+  font-weight: 800;
+}
+.VPFeature .details {
+  color: var(--vp-c-text-3);
 }
 
-/* ---------- 首页 CTA 区 ---------- */
-.minemc-cta {
-  margin: 48px auto 8px;
+/* ---------- 首页「加入方式」卡片（自定义 HTML 区块） ---------- */
+.minemc-join {
   max-width: 1152px;
-  padding: 36px 40px;
-  border-radius: 16px;
-  background: linear-gradient(120deg, #1e40af 0%, #2563eb 60%, #3b82f6 100%);
-  color: #fff;
-  text-align: center;
+  margin: 8px auto 0;
+  padding: 0 24px;
+}
+.minemc-join__card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 26px 30px;
+  background: #fff;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(27, 31, 38, .06);
+}
+.minemc-join__card h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+}
+.minemc-join__card p {
+  margin: 0;
+  color: var(--vp-c-text-3);
+  font-size: .95rem;
+  line-height: 1.7;
+}
+.minemc-ip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background: #eaf4fc;
+  border: 1px solid #d6e8f7;
+}
+.minemc-ip code {
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+}
+.minemc-ip a {
+  flex: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--vp-c-brand-1);
+  color: #fff !important;
+  font-size: .85rem;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+.minemc-ip a:hover {
+  background: var(--vp-c-brand-2);
+}
+
+/* ---------- 首页 CTA（对齐门户 .hm-cta 浅色卡） ---------- */
+.minemc-cta {
+  max-width: 1152px;
+  margin: 28px auto 8px;
+  padding: 26px 30px;
+  border-radius: 8px;
+  background: linear-gradient(110deg, #eef5fc 0%, #f7fafd 60%, #f3f6fa 100%);
+  border: 1px solid var(--vp-c-divider);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
 }
 .minemc-cta h2 {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
 }
 .minemc-cta p {
-  margin: 0 0 20px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.98rem;
+  margin: 0;
+  color: var(--vp-c-text-3);
+  font-size: .95rem;
 }
-.minemc-cta a {
+.minemc-cta__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.minemc-cta__links a {
   display: inline-block;
-  padding: 10px 28px;
-  border-radius: 999px;
-  background: #fff;
-  color: #1d4ed8 !important;
-  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 6px;
+  background: var(--vp-c-brand-1);
+  color: #fff !important;
+  font-size: .9rem;
+  font-weight: 700;
   text-decoration: none !important;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
 }
-.minemc-cta a:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+.minemc-cta__links a.ghost {
+  background: #fff;
+  color: var(--vp-c-brand-1) !important;
+  border: 1px solid var(--vp-c-divider);
+}
+.minemc-cta__links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(33, 133, 208, .22);
 }
 
 /* ---------- 侧边栏 ---------- */
 .VPSidebarItem.level-0 > .item > .text {
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 .VPSidebarItem .text {
@@ -257,4 +368,16 @@
 /* ---------- 页脚 ---------- */
 .VPFooter {
   border-top: 1px solid var(--vp-c-divider);
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 768px) {
+  .VPHero {
+    min-height: 46vh;
+    padding-top: 72px;
+    padding-bottom: 64px;
+  }
+  .minemc-join__card {
+    grid-template-columns: 1fr;
+  }
 }
