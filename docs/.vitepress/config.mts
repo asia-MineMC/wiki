@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // 部署在 <username>.github.io/<repo>/ 路径下，base 必须与仓库名一致
   base: '/wiki/',
-  title: 'WIKI · MINEMC',
+  title: 'WIKI • MINEMC',
   description: 'MINEMC 服务器 · 养老生存百科 —— 玩家向玩法教程与指令大全',
   cleanUrls: true,
   head: [

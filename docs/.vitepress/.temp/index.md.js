@@ -1,0 +1,19 @@
+import { ssrRenderAttrs } from "vue/server-renderer";
+import { useSSRContext } from "vue";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
+const __pageData = JSON.parse('{"title":"","description":"","frontmatter":{"layout":"home","hero":{"name":"MINEMC","text":"养老生存 · 玩家百科","tagline":"慢慢玩，一直都在。｜附魔、市场、决斗、世界 BOSS，一本看完。","actions":[{"theme":"brand","text":"新手入门","link":"/guide/start"},{"theme":"alt","text":"附魔大全","link":"/guide/enchant"},{"theme":"alt","text":"返回主页","link":"https://www.minemc.asia/"}]},"features":[{"icon":"⚒️","title":"79 种自定义附魔","details":"ExcellentEnchants 拓展包，附魔台、宝箱、钓鱼、村民交易与铁砧都能出货；21 种宝物附魔只能靠探索。","link":"/guide/enchant"},{"icon":"⚔️","title":"单挑决斗与段位","details":"/dt 打开决斗大厅，下界合金 / 铁套 / 钻石 / 弓箭四种场地任选，胜负 ±10 分，一路升到屠龙者。","link":"/guide/duel"},{"icon":"🛒","title":"全球市场与求购","details":"/market 上架出售、/wbuy 发布求购，无交易税，邮箱自动收货，默认同时挂 10 件商品。","link":"/guide/market"},{"icon":"🐉","title":"世界 BOSS · 每日两场","details":"3500 血的循声守卫，每天 12:00 与 20:00 刷新；掉落宝石可在宝石商城换补签卡与飞行卡。","link":"/guide/boss"}]},"headers":[],"relativePath":"index.md","filePath":"index.md"}');
+const _sfc_main = { name: "index.md" };
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(_attrs)}><div class="minemc-join"><div class="minemc-join__card"><div><h3>怎么进服？</h3><p>Java 版 1.21.11 客户端 →「多人游戏」→「添加服务器」，地址填 play.minemc.asia。 进服后按聊天栏提示注册 / 登录，Shift+F 打开菜单挑一个世界落脚。</p></div><div class="minemc-ip"><code>play.minemc.asia</code><a href="https://www.minemc.asia/status">服务器状态</a></div></div></div><div class="minemc-cta"><div><h2>还没找到路？先来打个招呼。</h2><p>玩法说明、更新日志与活动公告都在论坛，日常扯淡在 Q群 954632027。</p></div><div class="minemc-cta__links"><a href="https://www.minemc.asia/forum">前往论坛</a><a class="ghost" href="https://www.minemc.asia/">返回主页</a></div></div></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("index.md");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+export {
+  __pageData,
+  index as default
+};
