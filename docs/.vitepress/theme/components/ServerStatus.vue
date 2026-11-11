@@ -20,7 +20,7 @@
     <div v-if="data && data.online" class="srv__players">
       <div v-if="players.length" class="srv__heads">
         <div v-for="p in players" :key="p" class="srv__head" :title="p">
-          <img :src="headUrl(p)" :alt="p" loading="lazy" @error="onHeadError($event)" />
+          <img :src="p.head || headUrl(p)" :alt="p" loading="lazy" @error="onHeadError($event)" />
         </div>
       </div>
       <p v-else class="srv__note">服务器未公开在线玩家名单，暂时无法显示头像。</p>
@@ -58,8 +58,17 @@ function onHeadError(e) {
 
 async function load() {
   try {
-    const r = await fetch('/status-api.php', { cache: 'no-store' })
-    data.value = await r.json()
+    // 优先读插件推送的缓存（含玩家头像）；没有则回退到人数接口
+    let json = null
+    try {
+      const r = await fetch('/status-cache.json?t=' + Date.now(), { cache: 'no-store' })
+      if (r.ok) json = await r.json()
+    } catch (e) { /* ignore */ }
+    if (!json) {
+      const r2 = await fetch('/status-api.php', { cache: 'no-store' })
+      json = await r2.json()
+    }
+    data.value = json
     const d = new Date()
     updated.value = d.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
   } catch (e) {
