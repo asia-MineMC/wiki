@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  # hero.name 走 v-html，可直接写 span：MINE 斜体、MC 正体
-  name: '<span class="hm-mine">MINE</span><span class="hm-mc">MC</span>'
+  # hero.name 走 v-html，用 LOGO 字母图片，保证字体与 LOGO 完全一致
+  name: '<span class="hm-l"><img src="/wiki/hero/l1.png" alt="M"></span><span class="hm-l"><img src="/wiki/hero/l2.png" alt="I"></span><span class="hm-l"><img src="/wiki/hero/l3.png" alt="N"></span><span class="hm-l"><img src="/wiki/hero/l4.png" alt="E"></span><span class="hm-l"><img src="/wiki/hero/l5.png" alt="M"></span><span class="hm-l"><img src="/wiki/hero/l6.png" alt="C"></span>'
   text: 养老生存 · 维基百科
   tagline: 附魔、市场、决斗、世界 BOSS，一本看完。
   actions:
@@ -45,7 +45,7 @@ features:
     </div>
     <div class="minemc-ip">
       <code>play.minemc.asia</code>
-      <a href="https://www.minemc.asia/status">服务器状态</a>
+      <a href="https://www.minemc.asia/status" target="_blank" rel="noopener">服务器状态</a>
     </div>
   </div>
 </div>
@@ -56,7 +56,7 @@ features:
     <p>玩法说明、更新日志与活动公告都在论坛，日常扯淡在 Q群 954632027。</p>
   </div>
   <div class="minemc-cta__links">
-    <a href="https://www.minemc.asia/forum">前往论坛</a>
-    <a class="ghost" href="https://www.minemc.asia/">返回主页</a>
+    <a href="https://www.minemc.asia/forum" target="_blank" rel="noopener">前往论坛</a>
+    <a class="ghost" href="https://www.minemc.asia/" target="_blank" rel="noopener">返回主页</a>
   </div>
 </div>

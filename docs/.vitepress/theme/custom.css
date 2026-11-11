@@ -191,6 +191,9 @@
   color: #fff !important;
 }
 .VPHero .name {
+  display: flex;
+  align-items: flex-end;
+  gap: .04em;
   font-size: clamp(3rem, 9vw, 6.4rem);
   /* 默认 line-height/ max-width 是固定 px，放大字会溢出压到副标题，这里改成比例并放开宽度 */
   line-height: 1.06 !important;
@@ -211,6 +214,16 @@
 .hm-mine {
   font-style: italic;
 }
+/* 首屏标题：LOGO 字母图片（与 LOGO 字体完全一致） */
+.VPHero .name .hm-l { display: inline-block; }
+.VPHero .name .hm-l img {
+  display: block;
+  height: 1em;
+  width: auto;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, .35));
+}
+.VPHero .name .hm-l:nth-child(-n+4) img { transform: skewX(-9deg); }
+.VPHero .name .hm-l:nth-child(4) { margin-right: .08em; }
 /* 副标语单行不换行（默认 max-width:576px + pre-wrap 会折行） */
 .VPHero .tagline {
   max-width: none !important;
@@ -426,7 +439,32 @@
     padding-top: 72px;
     padding-bottom: 64px;
   }
+  .VPHero .name {
+    font-size: clamp(2.4rem, 10vw, 3.4rem);
+  }
+  .minemc-join {
+    padding: 0 16px;
+  }
   .minemc-join__card {
     grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 18px;
+  }
+  .minemc-ip {
+    flex-wrap: wrap;
+  }
+  .minemc-ip a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .minemc-cta {
+    padding: 20px;
+  }
+  .minemc-cta__links {
+    width: 100%;
+  }
+  .minemc-cta__links a {
+    flex: 1 1 auto;
+    text-align: center;
   }
 }
