@@ -25,6 +25,7 @@ export default defineConfig({
       { text: '市场', link: '/guide/market' },
       { text: '决斗', link: '/guide/duel' },
       { text: 'BOSS', link: '/guide/boss' },
+      { text: '宝石', link: '/guide/gems' },
       { text: '更新日志', link: '/guide/changelog' },
       { text: '返回主页', link: 'https://www.minemc.asia/' }
     ],
@@ -36,7 +37,8 @@ export default defineConfig({
           { text: '自定义附魔', link: '/guide/enchant' },
           { text: '全球市场与求购', link: '/guide/market' },
           { text: '单挑决斗', link: '/guide/duel' },
-          { text: '世界 BOSS 与宝石商城', link: '/guide/boss' },
+          { text: '世界 BOSS', link: '/guide/boss' },
+          { text: '宝石商城', link: '/guide/gems' },
           { text: '更新日志', link: '/guide/changelog' }
         ]
       }
