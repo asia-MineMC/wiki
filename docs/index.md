@@ -45,7 +45,7 @@ features:
     </div>
     <div class="minemc-ip">
       <code>play.minemc.asia</code>
-      <a href="https://www.minemc.asia/status" target="_blank" rel="noopener">服务器状态</a>
+      <a href="/wiki/guide/status.html">服务器状态</a>
     </div>
   </div>
 </div>

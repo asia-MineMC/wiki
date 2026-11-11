@@ -26,6 +26,7 @@ export default defineConfig({
       { text: '决斗', link: '/guide/duel' },
       { text: 'BOSS', link: '/guide/boss' },
       { text: '宝石', link: '/guide/gems' },
+      { text: '状态', link: '/guide/status' },
       { text: '更新日志', link: '/guide/changelog' },
       { text: '返回主页', link: 'https://www.minemc.asia/' }
     ],
@@ -39,6 +40,7 @@ export default defineConfig({
           { text: '单挑决斗', link: '/guide/duel' },
           { text: '世界 BOSS', link: '/guide/boss' },
           { text: '宝石商城', link: '/guide/gems' },
+          { text: '服务器状态', link: '/guide/status' },
           { text: '更新日志', link: '/guide/changelog' }
         ]
       }
